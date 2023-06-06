@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class User {
-    
+
     private Long id;
     private String name;
     private String role;
@@ -25,6 +25,9 @@ public class User {
 
         this.name = name;
         this.role = role;
+    }
+
+    public User(String name, String id, String role) {
     }
 
 
